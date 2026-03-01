@@ -1,0 +1,26 @@
+globalThis.__BUILD_MANIFEST = {
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/faf32_next_dist_build_polyfills_polyfill-nomodule.js"
+  ],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fdeec44b._.js",
+    "static/chunks/faf32_next_dist_compiled_react-dom_54c9cc76._.js",
+    "static/chunks/faf32_next_dist_compiled_react-server-dom-turbopack_75e81c49._.js",
+    "static/chunks/faf32_next_dist_compiled_next-devtools_index_94c69a6d.js",
+    "static/chunks/faf32_next_dist_compiled_2dec0942._.js",
+    "static/chunks/faf32_next_dist_client_3084fe66._.js",
+    "static/chunks/faf32_next_dist_1f89aa25._.js",
+    "static/chunks/faf32_@swc_helpers_cjs_02386c9a._.js",
+    "static/chunks/Desktop_Isra-ai_isra-ai_a0ff3932._.js",
+    "static/chunks/turbopack-Desktop_Isra-ai_isra-ai_df4c2e2b._.js"
+  ]
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js"
+];

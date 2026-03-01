@@ -1,0 +1,247 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+p {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* Container with padding-based approach for Chrome compatibility */
+.container {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+  display: block !important;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Chrome-specific fixes using padding on sections */
+@supports (-webkit-appearance: none) {
+  .container {
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Add padding to sections for Chrome - more reliable than margin */
+  section {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  @media (min-width: 768px) {
+    section {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+  
+  /* Ensure container centers properly in Chrome */
+  .container.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+}
+
+/* Hero-specific padding override to allow full-width layout */
+.hero-no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Themed scrollbars */
+html {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #ef4444 #fef2f2; /* thumb, track */
+}
+
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef2f2; /* light rose */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ef4444, #fb7185); /* red → rose */
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #dc2626, #f97373);
+}
+
+.dark::-webkit-scrollbar-track {
+  background: #020617; /* slate-950-ish */
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #f97373, #fb7185);
+}
+
+.dark html {
+  scrollbar-color: #f97373 #020617;
+}
+
+/* Custom Animations for Hero Section */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  opacity: 0;
+  animation: fade-in 0.8s ease-out 0.2s forwards;
+}
+
+.animate-fade-in-delay-2 {
+  opacity: 0;
+  animation: fade-in 0.8s ease-out 0.4s forwards;
+}
+
+.animate-fade-in-delay-3 {
+  opacity: 0;
+  animation: fade-in 0.8s ease-out 0.6s forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out;
+}
