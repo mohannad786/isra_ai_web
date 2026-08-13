@@ -1,3 +1,0 @@
-module.exports=[49164,a=>{"use strict";async function b(a){try{let b=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(a)}),c=await b.json();if(!b.ok)return{success:!1,error:c.error||"Failed to send email"};return{success:!0}}catch(a){return console.error("Error sending email:",a),{success:!1,error:a instanceof Error?a.message:"An unexpected error occurred"}}}a.s(["sendContactEmail",()=>b])}];
-
-//# sourceMappingURL=Desktop_Isra-ai_isra-ai_lib_email_ts_471c4d2b._.js.map

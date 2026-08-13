@@ -1,3 +1,0 @@
-module.exports=[83821,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(356);a.n(d("[project]/Desktop/Isra-ai/isra-ai/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},1493,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(356);a.n(d("[project]/Desktop/Isra-ai/isra-ai/node_modules/next/dist/client/components/builtin/global-error.js"))},62760,a=>{"use strict";a.i(83821);var b=a.i(1493);a.n(b)}];
-
-//# sourceMappingURL=faf32_next_dist_client_components_builtin_global-error_edaaf765.js.map
