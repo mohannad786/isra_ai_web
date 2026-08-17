@@ -11,13 +11,13 @@ const Team: React.FC = () => {
           </h2>
           <div className="space-y-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center md:text-left">
             <p>
-              Our leadership brings 30+ years of international, hands-on experience across enterprise technology, data platforms, and mission-critical systems in regulated and asset-intensive industries.
+              ISRA AI is founder-led. Our leadership brings 18+ years of international, hands-on experience across enterprise technology, data platforms, and AI-enabled systems, leading teams and delivering large-scale digital transformations across North America, Europe, Asia, and the Middle East.
             </p>
             <p>
-              With a strong technical foundation in enterprise applications, and AI-enabled systems data architecture, data governance and quality, we have designed, implemented, and operated large-scale digital solutions while leading global delivery teams across North America, Europe, Asia, and the Middle East.
+              That same hands-on approach carries into every ISRA AI venture: not just setting strategy from a distance, but staying close to the code, the users, and the day-to-day details that decide whether a product actually gets used.
             </p>
             <p className="font-medium text-gray-900 dark:text-white">
-              Clients benefit from a rare combination of strategic vision and hands-on execution.
+              Strategic vision, backed by direct execution.
             </p>
           </div>
         </div>

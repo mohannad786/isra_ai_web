@@ -11,17 +11,15 @@ const Footer: React.FC = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'News', href: '#' },
-      { name: 'Partners', href: '#' },
+      { name: 'About', href: '#about' },
+      { name: 'How We Build', href: '#methodology' },
+      { name: 'Leadership', href: '#leadership' },
+      { name: 'Contact', href: '#contact' },
     ],
     services: [
-      { name: 'AI SaaS', href: '#' },
-      { name: 'AI Automation', href: '#' },
-      { name: 'Web Services', href: '#' },
-      { name: 'Marketing & Sales', href: '#' },
-      { name: 'Industry Solutions', href: '#' },
+      { name: 'Khayal — AI Elder Care', href: '#services' },
+      { name: 'Awaz — Voice Automation', href: '#services' },
+      { name: 'New Industries', href: '#services' },
     ],
     legal: [
       { name: 'Privacy Policy', href: '#' },
@@ -51,9 +49,9 @@ const Footer: React.FC = () => {
               </a>
             </div>
             <p className="mt-4 text-gray-400 max-w-md">
-              Isra AI delivers cutting-edge AI solutions and web services, 
-              helping businesses transform their digital presence and automate 
-              complex processes for greater efficiency.
+              ISRA AI is a multi-industry AI studio. We build and pilot real
+              products with real users, starting with Khayal, our elder-care
+              platform, and Awaz, our voice automation venture.
             </p>
             <div className="mt-6 flex space-x-4">
               {footerLinks.social.map((link) => (

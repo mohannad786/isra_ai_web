@@ -112,10 +112,10 @@ const Contact: React.FC = () => {
           </h2>
           <div className="space-y-4 mb-8">
             <p className="text-xl font-medium text-gray-900 dark:text-white">
-              We don't build experimental AI.
+              We're not a lab.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              We build AI you can trust—designed for scale, compliance, and impact.
+              We're building things people actually use, starting with Khayal.
             </p>
           </div>
           <span

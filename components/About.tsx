@@ -5,23 +5,23 @@ const About: React.FC = () => {
   const values = [
     {
       icon: <Shield size={24} />,
-      title: 'Ethical by Design',
-      description: "Trust isn't an afterthought; it's baked into our code through privacy and security."
+      title: 'Built, Not Just Advised',
+      description: "We ship working products, starting with Khayal, our elder-care platform in active pilot with real families."
     },
     {
       icon: <Target size={24} />,
-      title: 'Pragmatic Impact',
-      description: 'We skip the buzzwords to focus on measurable outcomes from day one.'
+      title: 'Problem-First',
+      description: 'Every venture starts from a gap we’ve observed firsthand, not a trend we’re chasing.'
     },
     {
       icon: <Scale size={24} />,
-      title: 'Governance First',
-      description: 'We ensure your AI remains compliant in an ever-changing regulatory landscape.'
+      title: 'Hands-On Through Iteration',
+      description: 'Our founders write the code, talk to users, and adjust based on what actually happens in the field.'
     },
     {
       icon: <Users size={24} />,
-      title: 'Radical Collaboration',
-      description: "We don't just deliver a product; we integrate with your team for the long haul."
+      title: 'Multi-Industry by Design',
+      description: "The same applied-AI approach extends across care-tech, voice automation, and beyond, so one sector never defines us."
     }
   ];
 
@@ -35,7 +35,7 @@ const About: React.FC = () => {
               Our Purpose
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              We exist to empower organizations with human-centric AI. We turn fragmented data into secure, compliant, and high-impact systems that solve the world's most pressing business challenges.
+              ISRA AI is a multi-industry AI studio. We identify problems worth solving, build the product ourselves, and stay hands-on through launch and iteration with real users — proving the approach with Khayal before extending it into new industries.
             </p>
           </div>
 

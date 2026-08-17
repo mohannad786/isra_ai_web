@@ -17,17 +17,17 @@ interface DashFrame {
 
 const dashFrames: DashFrame[] = [
   {
-    headline: ["AI Is No Longer a Tool.", "It’s a Workforce."],
-    subtext: "From automation to autonomy."
+    headline: ["We Don't Just Advise.", "We Build."],
+    subtext: "From first prototype to real users, in production."
   },
   {
-    headline: ["AI Agents Execute Work — End to End"],
-    subtext: "They monitor systems, reason over data, and act across workflows without human bottlenecks."
+    headline: ["Khayal: Our First Venture, Live Today"],
+    subtext: "A voice-first AI companion for elderly care, already in pilot with real families in Islamabad and the diaspora."
   },
   {
-    headline: ["Real Impact. Real Scale."],
-    subtext: "Built for enterprises that demand trust.",
-    bullets: ["30–60% efficiency gains", "Always-on intelligence", "Faster, safer decisions"]
+    headline: ["One Playbook. Every Industry."],
+    subtext: "The same applied-AI approach, built to extend across care-tech, voice automation, and beyond.",
+    bullets: ["18+ years of engineering leadership", "Founder-led, hands-on execution", "Built with real users from day one"]
   }
 ];
 
@@ -62,15 +62,15 @@ const Hero: React.FC = () => {
   }, [isPaused]);
 
   const stats = [
-    { value: '30–60%', label: 'Reduction in manual effort' },
-    { value: '24/7', label: 'Autonomous operations' },
-    { value: 'Decisions', label: 'Decisions in seconds, not days' },
+    { value: '18+ Years', label: 'International AI & engineering leadership' },
+    { value: '1 Flagship', label: 'Khayal, in active pilot' },
+    { value: 'Multi-Industry', label: 'One studio, many ventures' },
   ];
 
   const floatingBadges = [
-    { icon: Shield, text: 'Trusted AI Partner', delay: '0s', position: 'top-20 right-10' },
-    { icon: TrendingUp, text: 'Growth Focused', delay: '0.5s', position: 'top-40 right-32' },
-    { icon: Zap, text: 'Fast Integration', delay: '1s', position: 'bottom-32 right-20' },
+    { icon: Shield, text: 'Founder-Led', delay: '0s', position: 'top-20 right-10' },
+    { icon: TrendingUp, text: 'Applied, Not Slideware', delay: '0.5s', position: 'top-40 right-32' },
+    { icon: Zap, text: 'Built With Real Users', delay: '1s', position: 'bottom-32 right-20' },
   ];
 
   return (
@@ -138,16 +138,16 @@ const Hero: React.FC = () => {
               <div className="flex-1 space-y-6 ml-20">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-bold tracking-tight leading-tight max-w-xl">
                   <span className="block text-gray-900 dark:text-white mb-1">
-                    AI You Can <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Trust.</span>
+                    We Build AI <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Ventures.</span>
                   </span>
                   <span className="block text-gray-900 dark:text-white">
-                    Results You Can <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Measure.</span>
+                    That Actually <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Ship.</span>
                   </span>
                 </h1>
 
                 <div className="space-y-4">
                   <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl leading-relaxed">
-                    We build scalable, data-driven AI solutions that integrate seamlessly into your workflow to drive immediate impact.
+                    ISRA AI is a multi-industry AI studio. We design, build, and pilot products with real users — starting with Khayal, our elder-care platform already in the hands of families today.
                   </p>
                 </div>
 
@@ -288,7 +288,7 @@ const Hero: React.FC = () => {
               <div className="mx-6 mb-3 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  <span className="text-[9px] uppercase tracking-widest text-emerald-600 dark:text-emerald-400 font-bold">Enterprise Mode</span>
+                  <span className="text-[9px] uppercase tracking-widest text-emerald-600 dark:text-emerald-400 font-bold">Live Venture: Khayal</span>
                 </div>
                 <div className="flex gap-1">
                   {[...Array(3)].map((_, i) => (
@@ -308,16 +308,16 @@ const Hero: React.FC = () => {
           <div className="space-y-6">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight">
               <span className="block text-gray-900 dark:text-white mb-1">
-                AI You Can <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Trust.</span>
+                We Build AI <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Ventures.</span>
               </span>
               <span className="block text-gray-900 dark:text-white">
-                Results You Can <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Measure.</span>
+                That Actually <span className="bg-gradient-to-r from-red-600 via-red-500 to-rose-500 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">Ship.</span>
               </span>
             </h1>
 
             <div className="space-y-4">
               <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed px-4">
-                We build scalable, data-driven AI solutions that integrate seamlessly into your workflow to drive immediate impact.
+                A multi-industry AI studio. We design, build, and pilot real products — starting with Khayal, our elder-care platform live with families today.
               </p>
             </div>
 

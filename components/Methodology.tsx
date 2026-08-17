@@ -5,23 +5,23 @@ const Methodology: React.FC = () => {
   const pillars = [
     {
       icon: <Eye size={24} />,
-      title: 'Radical Transparency',
-      description: '"Black box" AI is a liability. We build explainable models so you can trust every decision the system makes.'
+      title: 'Honest Positioning',
+      description: "We describe features as they exist today, not as roadmap ambitions. If something's still in pilot, we say so."
     },
     {
       icon: <Lock size={24} />,
-      title: 'Privacy-by-Architecture',
-      description: "Security isn't a layer; it's the core. We use advanced encryption and privacy-preserving techniques to protect your IP."
+      title: 'Privacy by Default',
+      description: "Especially for health data, protection is built in from the first line of code, not added before a launch."
     },
     {
       icon: <Plug size={24} />,
-      title: 'Frictionless Integration',
-      description: 'Our solutions are designed to live within your current tech stack, not disrupt it.'
+      title: 'Fits Into Real Life',
+      description: 'Our products work within the phones, routines, and habits people already have, not new hardware or workflows.'
     },
     {
       icon: <TrendingUp size={24} />,
-      title: 'Elastic Scalability',
-      description: 'We build for the "Day 2" reality, ensuring your solution grows from a localized pilot to an enterprise-wide asset.'
+      title: 'Built to Scale When Proven',
+      description: 'We start small, with a handful of pilot households, and expand only once real usage validates the approach.'
     }
   ];
 
@@ -29,20 +29,20 @@ const Methodology: React.FC = () => {
     {
       icon: <Target size={28} />,
       number: '1',
-      title: 'Intentional Design (Problem-First)',
-      description: "We don't chase technology; we solve for outcomes. By identifying high-impact business and societal challenges first, we ensure every AI implementation serves a specific, measurable purpose."
+      title: 'Start With a Real Problem',
+      description: "We don't chase technology trends. Every venture starts from a gap we've observed firsthand, in our own family's life or in direct conversations with the people who'd use it."
     },
     {
       icon: <Database size={28} />,
       number: '2',
-      title: 'The Trusted Data Foundation',
-      description: 'Reliable AI requires a "clean-room" data strategy. We architect robust data pipelines with built-in governance, lineage tracking, and security to ensure your systems are compliant and audit-ready from day one.'
+      title: 'Build With Real Users From Day One',
+      description: 'We pilot early with a small group of real users, in real households, and let their actual usage, not our assumptions, shape what gets built next.'
     },
     {
       icon: <Rocket size={28} />,
       number: '3',
-      title: 'Enterprise-Grade Implementation',
-      description: 'We bridge the gap between "experimental" and "operational." Our deployment framework focuses on four critical pillars:'
+      title: 'Ship, Then Refine Relentlessly',
+      description: "We obsess over the details that decide whether people actually use the product day to day, like how long it takes a voice assistant to start listening, not just feature completeness."
     }
   ];
 
@@ -52,10 +52,10 @@ const Methodology: React.FC = () => {
         {/* Header - Mobile optimized */}
         <div className="max-w-4xl mx-auto text-center mb-10 md:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-logo font-bold mb-3 md:mb-4 text-gray-900 dark:text-white leading-tight px-2">
-            The ISRA Methodology: From Purpose to Production
+            How We Build: From Problem to Pilot to Product
           </h2>
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 italic px-4 leading-relaxed">
-            Successful AI isn't built on algorithms alone—it's built on a foundation of integrity, security, and measurable intent.
+            Successful AI isn't built on algorithms alone, it's built on a foundation of real users, honest iteration, and hands-on execution.
           </p>
         </div>
 
@@ -123,7 +123,7 @@ const Methodology: React.FC = () => {
         {/* Closing Tagline */}
         <div className="text-center px-4">
           <p className="text-xl md:text-2xl lg:text-3xl font-logo font-bold text-gray-900 dark:text-white leading-tight">
-            We don't build demos. We build systems that endure.
+            We don't build demos. We build things people actually use.
           </p>
         </div>
       </div>

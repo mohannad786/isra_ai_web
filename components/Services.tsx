@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Eye, Shield, Database, Zap, Heart } from 'lucide-react';
+import { Brain, Shield, Database, Zap, Heart } from 'lucide-react';
 
 interface ServiceFeature {
   title: string;
@@ -25,100 +25,100 @@ interface SpecializedService {
 }
 
 const Services: React.FC = () => {
-  // Primary Service Tier: Strategic AI Solutions
+  // Live Ventures
   const primaryServices: PrimaryService[] = [
     {
-      icon: <Brain size={36} />,
-      title: 'GenAI & Enterprise Intelligence',
+      icon: <Heart size={36} />,
+      title: 'Khayal (خیال) — AI Elder Care',
       features: [
         {
-          title: 'The Copilot Engine',
+          title: 'Voice-First Companion',
           description:
-            'Secure internal AI assistants that transform fragmented enterprise knowledge into actionable intelligence and reporting.'
+            'Elderly users interact by speaking naturally in Urdu or English — no typing, no complex menus, no learning curve.'
         },
         {
-          title: 'Precision RAG (Retrieval-Augmented Generation)',
+          title: 'Caregiver Portal',
           description:
-            'High-fidelity AI grounded in private data using advanced vector search and semantic indexing to eliminate hallucinations.'
+            'Remote family members get an urgency-sorted view across every parent or relative they’re looking after, with real-time alerts.'
         },
         {
-          title: 'Agentic Workflows',
+          title: 'Built Around the Household',
           description:
-            'Autonomous AI agents that orchestrate complex, end-to-end business workflows across your existing systems.'
+            'A role model for Health Users, Caregivers, and hired Care Providers, reflecting how families actually use it, not how we assumed they would.'
         }
       ]
     },
     {
-      icon: <Eye size={36} />,
-      title: 'Advanced Predictive & Visual AI',
+      icon: <Zap size={36} />,
+      title: 'Awaz — Voice Automation',
       features: [
         {
-          title: 'Predictive Analytics',
+          title: 'Built on Khayal’s Voice Stack',
           description:
-            'Custom machine learning models for forecasting, risk scoring, anomaly detection, and fraud prevention.'
+            'The same speech, reasoning, and text-to-speech pipeline that powers Khayal, adapted for business voice automation.'
         },
         {
-          title: 'Cognitive Vision',
+          title: 'Pakistan, GCC & US Markets',
           description:
-            'Image and video intelligence for industrial inspection, safety monitoring, and automated visual analysis.'
+            'Urdu, Arabic, and English voice automation, with the Gulf as our priority second market given the underserved demand for Arabic voice AI.'
         }
       ]
     }
   ];
 
-  // Enterprise-Ready Layer
+  // How We Build
   const enterpriseServices: EnterpriseService[] = [
     {
       icon: <Shield size={24} />,
-      title: 'Responsible & Explainable AI (XAI)',
+      title: 'Privacy by Default',
       description:
-        'Transparent, auditable AI systems with built-in bias detection, explainability, and regulatory compliance.'
+        'Sensitive data, especially health data, is protected by design from day one, not bolted on after launch.'
     },
     {
       icon: <Database size={24} />,
-      title: 'Data Integrity & Lineage',
+      title: 'Grounded in Real Usage',
       description:
-        'Automated data profiling, lineage tracking, and anomaly detection to ensure high-quality AI inputs.'
+        'Product decisions come from pilot data and direct user feedback, not assumptions about what buyers want to hear.'
     },
     {
       icon: <Zap size={24} />,
-      title: 'MLOps & Cost Efficiency',
+      title: 'Obsessed With What Users Feel',
       description:
-        'Continuous monitoring, drift detection, and intelligent resource optimization to control AI costs at scale.'
+        'We treat details like voice-response latency and interaction friction as core product work, not polish.'
     }
   ];
 
-  // Specialized Sector Intelligence
+  // Where We're Expanding
   const specializedServices: SpecializedService[] = [
     {
       icon: <Heart size={36} />,
       title: 'Healthcare & Care-Tech',
       features: [
         {
-          title: 'AI-Powered Healthcare Intelligence',
+          title: 'Elder Care & Remote Monitoring',
           description:
-            'Smarter diagnostics, secure health data platforms, and predictive insights that improve clinical and patient outcomes.'
+            'Voice-first AI companions and caregiver tools for aging-in-place, proven through Khayal’s active pilots.'
         },
         {
-          title: 'Connected Care & Assisted Living Technology',
+          title: 'Clinical & Patient Monitoring',
           description:
-            'AI-enabled monitoring, mobile care applications, and secure health records supporting safer, independent living.'
+            'Early-stage exploration of light-touch patient monitoring, informed by direct interest from clinicians in our network.'
         }
       ]
     },
     {
       icon: <Brain size={36} />,
-      title: 'Oil & Gas',
+      title: 'New Industries',
       features: [
         {
-          title: 'AI-Driven Drilling Optimization',
+          title: 'One Playbook, Applied Elsewhere',
           description:
-            'Real-time intelligence to reduce non-productive time, improve rate of penetration, and lower drilling risk.'
+            'The same problem-first, hands-on approach we used to build Khayal, now being evaluated for other regulated and asset-intensive sectors.'
         },
         {
-          title: 'Upstream & Asset Optimization',
+          title: 'Oil & Gas: On Our Radar',
           description:
-            'Predictive intelligence and digital twins that maximize production, reduce downtime, and enhance asset performance.'
+            'Early-stage exploration of applied AI for asset-intensive operations — still validating real problems before we build anything.'
         }
       ]
     }
@@ -130,10 +130,10 @@ const Services: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-10 md:mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-logo font-bold text-gray-900 dark:text-white mb-3 md:mb-4 leading-tight">
-            Our Services
+            What We're Building
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed px-2">
-            Enterprise-grade AI capabilities designed for scale, compliance, and measurable impact
+            Live ventures, the practices behind them, and where we're headed next
           </p>
         </div>
 
@@ -142,7 +142,7 @@ const Services: React.FC = () => {
           {/* Strategic AI Solutions */}
           <div>
             <h3 className="text-xl md:text-2xl lg:text-3xl font-logo font-bold text-gray-900 dark:text-white mb-6">
-              Strategic AI Solutions
+              Live Ventures
             </h3>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -179,7 +179,7 @@ const Services: React.FC = () => {
           {/* Governance */}
           <div>
             <h3 className="text-xl md:text-2xl lg:text-3xl font-logo font-bold text-gray-900 dark:text-white mb-6">
-              Governance, Trust & Operations
+              How We Build
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -203,7 +203,7 @@ const Services: React.FC = () => {
           {/* Specialized Sectors */}
           <div>
             <h3 className="text-xl md:text-2xl lg:text-3xl font-logo font-bold text-gray-900 dark:text-white mb-6">
-              Specialized Sector Intelligence
+              Where We're Expanding
             </h3>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
