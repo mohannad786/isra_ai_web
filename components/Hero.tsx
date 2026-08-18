@@ -6,6 +6,9 @@ import {
   TrendingUp,
   Shield,
   Zap,
+  Award,
+  Rocket,
+  Building2,
 } from 'lucide-react';
 
 interface DashFrame {
@@ -27,7 +30,7 @@ const dashFrames: DashFrame[] = [
   {
     headline: ["One Playbook. Every Industry."],
     subtext: "The same applied-AI approach, built to extend across care-tech, voice automation, and beyond.",
-    bullets: ["18+ years of engineering leadership", "Founder-led, hands-on execution", "Built with real users from day one"]
+    bullets: ["Extensive engineering leadership", "Founder-led, hands-on execution", "Built with real users from day one"]
   }
 ];
 
@@ -62,9 +65,9 @@ const Hero: React.FC = () => {
   }, [isPaused]);
 
   const stats = [
-    { value: '18+ Years', label: 'International AI & engineering leadership' },
-    { value: '1 Flagship', label: 'Khayal, in active pilot' },
-    { value: 'Multi-Industry', label: 'One studio, many ventures' },
+    { value: 'Extensive Experience', label: 'Founder-led AI & engineering leadership', icon: Award },
+    { value: 'Our Flagship Venture', label: 'Khayal — elder-care AI, live today', icon: Rocket },
+    { value: 'Multi-Industry Studio', label: 'One playbook, applied across industries', icon: Building2 },
   ];
 
   const floatingBadges = [
@@ -119,19 +122,27 @@ const Hero: React.FC = () => {
           {/* Left Side (Static) */}
           <div className="space-y-6">
             <div className="flex items-center">
-              <div className="flex flex-col gap-3 items-start -ml-36 mr-14">
+              <div className="flex flex-col gap-4 items-start -ml-36 mr-14">
                 {stats.map((stat, index) => (
-                  <div
+                  <motion.div
                     key={index}
-                    className="backdrop-blur-md bg-white/80 dark:bg-gray-900/70 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 shadow-xl w-28 h-28 sm:w-32 sm:h-32 flex flex-col justify-center px-3 "
+                    initial={{ opacity: 0, x: -16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.15 * index, ease: 'easeOut' }}
+                    className="group flex flex-col items-start gap-2 w-40 sm:w-44 backdrop-blur-md bg-white/80 dark:bg-gray-900/70 rounded-2xl border border-gray-200/60 dark:border-gray-700/60 shadow-xl px-4 py-4 hover:-translate-y-0.5 hover:shadow-2xl hover:shadow-red-500/10 hover:border-red-200 dark:hover:border-red-800/50 transition-all duration-300"
                   >
-                    <div className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-red-600 to-rose-600 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text">
-                      {stat.value}
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-red-500 to-rose-600 shadow-lg shadow-red-500/30 group-hover:scale-110 transition-transform duration-300">
+                      <stat.icon className="h-4 w-4 text-white" />
                     </div>
-                    <div className="text-[10px] sm:text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1 font-medium leading-snug ">
-                      {stat.label}
+                    <div>
+                      <div className="text-base sm:text-lg font-bold bg-gradient-to-r from-red-600 to-rose-600 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text leading-tight">
+                        {stat.value}
+                      </div>
+                      <div className="text-[11px] text-gray-600 dark:text-gray-400 mt-1 font-medium leading-snug">
+                        {stat.label}
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 

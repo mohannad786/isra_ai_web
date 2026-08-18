@@ -27,7 +27,7 @@ We exist to empower organizations with human-centric AI. We turn fragmented data
 
 ## Leadership
 
-Our leadership brings 18+ years of international experience across financial services, technology, and enterprise data environments.
+Our leadership brings extensive international experience across financial services, technology, and enterprise data environments.
 
 With a strong background in data governance, data quality, enterprise systems, and program leadership, we have led global teams and delivered large-scale digital and AI transformations across North America, Europe, Asia, and the Middle East.
 

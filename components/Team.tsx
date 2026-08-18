@@ -11,7 +11,7 @@ const Team: React.FC = () => {
           </h2>
           <div className="space-y-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center md:text-left">
             <p>
-              ISRA AI is founder-led. Our leadership brings 18+ years of international, hands-on experience across enterprise technology, data platforms, and AI-enabled systems, leading teams and delivering large-scale digital transformations across North America, Europe, Asia, and the Middle East.
+              ISRA AI is founder-led. Our leadership brings extensive international, hands-on experience across enterprise technology, data platforms, and AI-enabled systems, leading teams and delivering large-scale digital transformations across North America, Europe, Asia, and the Middle East.
             </p>
             <p>
               That same hands-on approach carries into every ISRA AI venture: not just setting strategy from a distance, but staying close to the code, the users, and the day-to-day details that decide whether a product actually gets used.
