@@ -135,10 +135,10 @@ const Hero: React.FC = () => {
                       <stat.icon className="h-4 w-4 text-white" />
                     </div>
                     <div>
-                      <div className="text-base sm:text-lg font-bold bg-gradient-to-r from-red-600 to-rose-600 dark:from-red-400 dark:via-red-400 dark:to-rose-400 text-transparent bg-clip-text leading-tight">
+                      <div className="text-base sm:text-lg font-bold text-black dark:text-white leading-tight">
                         {stat.value}
                       </div>
-                      <div className="text-[11px] text-gray-600 dark:text-gray-400 mt-1 font-medium leading-snug">
+                      <div className="text-xs text-gray-700 dark:text-gray-300 mt-1 font-medium leading-snug">
                         {stat.label}
                       </div>
                     </div>
