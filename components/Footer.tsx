@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-8 mt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Isra AI. All rights reserved.
+            &copy; {new Date().getFullYear()} Isra AI LLC. All rights reserved.
           </p>
           
           <button 
