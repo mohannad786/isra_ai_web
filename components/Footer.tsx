@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { ArrowUp, Linkedin, Twitter, Github, Instagram } from 'lucide-react';
 
@@ -11,20 +13,20 @@ const Footer: React.FC = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About', href: '#about' },
-      { name: 'How We Build', href: '#methodology' },
-      { name: 'Leadership', href: '#leadership' },
-      { name: 'Contact', href: '#contact' },
+      { name: 'About', href: '/#about' },
+      { name: 'How We Build', href: '/#methodology' },
+      { name: 'Leadership', href: '/#leadership' },
+      { name: 'Contact', href: '/#contact' },
     ],
     services: [
-      { name: 'Khayal — AI Elder Care', href: '#services' },
-      { name: 'Awaz — Voice Automation', href: '#services' },
-      { name: 'New Industries', href: '#services' },
+      { name: 'Khayal — AI Elder Care', href: '/#services' },
+      { name: 'Awaz — Voice Automation', href: '/#services' },
+      { name: 'New Industries', href: '/#services' },
     ],
     legal: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Cookies', href: '#' },
+      { name: 'Privacy Policy', href: '/privacy' },
+      { name: 'Terms of Service', href: '/terms' },
+      { name: 'Cookies', href: '/privacy#cookies' },
     ],
     social: [
       { name: 'LinkedIn', icon: <Linkedin size={16} />, href: '#' },
@@ -40,7 +42,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <a href="#home" className="flex items-center">
+              <a href="/" className="flex items-center">
                 <img 
                   src="/ISRA_AI_copy.png" 
                   alt="Isra AI Logo" 
